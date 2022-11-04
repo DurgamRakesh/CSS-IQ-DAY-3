@@ -1,0 +1,112 @@
+button {
+    width: 200px;
+    height: 50px;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+button:hover {
+    background-color: purple;
+}
+
+/* ----------------------------------------------- */
+
+p {
+    font-family: 'Kolker Brush', cursive;
+    font-size: 3rem;
+}
+
+/* ----------------------------------------------- */
+
+.div1 {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(146, 16, 158);
+    transition: width 2s;
+    border: 3px solid black;
+}
+.div1:hover {
+    width: 300px;
+}
+
+/* ----------------------------------------------- */
+
+.div2 {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(36, 202, 86);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* ----------------------------------------------- */
+
+.div-main{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.items{
+    height: 150px;
+    width: 250px;
+    background-color: rgb(30, 210, 195);
+    color: white;
+    border: 3px solid brown;
+}
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+    .div-main{
+        height: 800px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .items{
+        display: flex;
+        align-self: center;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    .div-main{
+        height: 800px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .items{
+        display: flex;
+        align-self: center;
+    }
+}
+
+/* ----------------------------------------------- */
+
+.div3 {
+    height: 200px;
+    width: 200px;
+    background-color: deeppink;
+    border: 3px solid black;
+    border-radius: 50%;
+    animation: my-div3 1s infinite;
+    display: flex;
+    margin: auto;
+}
+@keyframes my-div3 {
+    0%{
+        background-color: deeppink;
+    }
+    25%{
+        background-color: deepskyblue;
+    }
+    50%{
+        background-color: gold;
+    }
+    75%{
+        background-color: orangered;
+    }
+    100%{
+        background-color: purple;
+    }
+    
+}
